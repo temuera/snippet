@@ -211,7 +211,14 @@ prompt_dir() {
 prompt_virtualenv() {
 #  local virtualenv_path="$VIRTUAL_ENV"
 #  if [[ -n $virtualenv_path && -n $VIRTUAL_ENV_DISABLE_PROMPT ]]; then
-    prompt_segment blue default "⚙️"
+ 
+if [[ -n $STY ]]; then
+    prompt_segment blue default $STY
+    else
+prompt_segment blue default "⚙️"
+fi
+
+    
 #fi
 }
 
