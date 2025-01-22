@@ -110,7 +110,7 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=/home/mygo
 echo -ne "\033]0;$(hostname -f) $(hostname -I)\a"
-cd /tank
+cd /data
 neofetch
 screen -ls
 
