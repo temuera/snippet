@@ -109,8 +109,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=/home/mygo
+export GOTMPDIR=/mnt/d/mygo/temp
+export GOCACHE=/mnt/d/mygo/cache
 echo -ne "\033]0;$(hostname -f) $(hostname -I)\a"
 cd /data
-neofetch
+fastfetch
 screen -ls
 
