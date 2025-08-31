@@ -1,0 +1,18 @@
+apt update && apt install sudo curl wget nload htop iftop sysstat mdadm git xfsprogs ca-certificates gnupg lsb-release screen p7zip-full zsh fio software-properties-common vlan smartmontools iftop iotop s-tui stress cpufrequtils aria2 hwinfo axel zstd net-tools linux-cpupower -y
+
+
+wget https://raw.githubusercontent.com/temuera/snippet/main/fastfetch -o /usr/bin/fastfetch
+chmod +x /usr/bin/fastfetch
+
+apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+curl -o ~/.zshrc https://raw.githubusercontent.com/temuera/snippet/main/zshrc
+curl -o ~/.oh-my-zsh/themes/agnoster.zsh-theme  https://raw.githubusercontent.com/temuera/snippet/main/agnoster.zsh-theme
+cd ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+cd ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/zsh-users/zsh-autosuggestions
+source ~/.zshrc
