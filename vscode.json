@@ -1,1 +1,96 @@
 
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "alwaysShowNotificationIcon": false,
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultInputScope": "alphanumericHalfWidth",
+    "defaultProfile": "{4dd1e689-b517-5f39-947d-78e8a8bdf958}",
+    "disableAnimations": true,
+    "firstWindowPreference": "defaultProfile",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "DjangoRebornAgain",
+            "font": 
+            {
+                "face": "Consolas"
+            },
+            "opacity": 80,
+            "startingDirectory": "d:\\mygo\\src"
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+           {
+                "guid": "{4dd1e689-b517-5f39-947d-78e8a8bdf958}",
+                "hidden": false,
+                "name": "Ubuntu 20.04.6 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#112601",
+            "black": "#000000",
+            "blue": "#1104DB",
+            "brightBlack": "#AFE9F0",
+            "brightBlue": "#77AFFF",
+            "brightCyan": "#CFFFD1",
+            "brightGreen": "#5AAB58",
+            "brightPurple": "#F48EFF",
+            "brightRed": "#FF9F9F",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF94",
+            "cursorColor": "#36DE31",
+            "cyan": "#9DF39F",
+            "foreground": "#DADEDC",
+            "green": "#008F2A",
+            "name": "DjangoRebornAgain",
+            "purple": "#400773",
+            "red": "#960B04",
+            "selectionBackground": "#203727",
+            "white": "#FFFFFF",
+            "yellow": "#FFD40D"
+        }
+    ],
+    "tabWidthMode": "equal",
+    "themes": []
+}
